@@ -4,7 +4,7 @@ interface RequestQuery {
   source_language: string; //Can also create enum for specific languages like en,fr,te etc.
   destination_language: string; //Can also create enum for specific languages like en,fr,te etc.
 }
-import Translation from '../model/Translation';
+import Translation from '../model/translation';
 import dotenv from 'dotenv';
 dotenv.config();
 const googleTranslateUrl = process.env.GOOGLE_TRANSLATE_URL; // Google Translate URL with API Key
